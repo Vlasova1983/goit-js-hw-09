@@ -27,8 +27,6 @@ const options = {
     },
 };
 
-
-
 flatpickr("#datetime-picker", options);
 const startChangeTimeBtn = document.querySelector('[data-start]');
 startChangeTimeBtn.setAttribute('disabled',true);
