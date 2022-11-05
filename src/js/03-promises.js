@@ -16,7 +16,7 @@ function onAmountValue(event){
   const step = Number(formEl.step.value);  
   let sec = delay;
 
-  for(i=1; i<amount+1; i+=1){      
+  for(let i=1; i<amount+1; i+=1){      
     createPromise(i,sec)
     .then(({ position, delay }) => {
       Notiflix.Notify.info(`✅ Fulfilled promise ${position} in ${delay}ms`);
